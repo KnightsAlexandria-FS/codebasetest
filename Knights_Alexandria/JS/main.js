@@ -5,3 +5,15 @@ function sumOfArray(arr) {
 module.exports = {
   sumOfArray,
 };
+
+function isPalindrome(str) {
+  if (typeof str !== 'string') return false;
+  if (str.length == 0) return true;
+  const cleanStr = str.toLowerCase();
+  return cleanStr == cleanStr.split("").reverse().join("");
+}
+
+module.exports = {
+  sumOfArray,
+  isPalindrome
+};
